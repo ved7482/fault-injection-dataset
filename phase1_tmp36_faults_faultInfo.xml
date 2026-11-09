@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/faultinfo_datamodel/R2021a">
+  <faultinfo.FaultContainerSet type="faultinfo.FaultContainerSet" uuid="b839ef96-2974-4089-9587-06b0c0dbf19a">
+    <conditionals type="faultinfo.conditional.Conditional" uuid="171b2554-23f7-4fd5-a67f-702073d1e377">
+      <checksum>00000000-0000-0000-0000-000000000000</checksum>
+      <condition>x == true</condition>
+      <mustBeLogged>false</mustBeLogged>
+      <name>SampleConditional</name>
+      <resyncRefBlkID></resyncRefBlkID>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+      <symbols type="faultinfo.conditional.ExpressionSymbol" uuid="83c04705-21d1-4c30-b7fc-30d26a2a0c8b">
+        <expression>true</expression>
+        <name>x</name>
+      </symbols>
+    </conditionals>
+    <faultContainers type="faultinfo.FaultContainer" uuid="59a8fb5d-207d-4c21-abcf-2781c3b7d89f">
+      <activeFault type="faultinfo.SLFault" uuid="db988946-7fa2-47b6-ad2b-008202c5ab8e"/>
+      <faultedEntityID>Outport|phase1_tmp36_faults:10|1</faultedEntityID>
+      <faultedEntityName>phase1_tmp36_faults/Zero-Order Hold/Outport/1</faultedEntityName>
+      <faults type="faultinfo.SLFault" uuid="d1d39480-79f2-4614-848a-e11c250e0e29">
+        <checksum>71c9109d-0827-45e0-a2b4-2d25750045f9</checksum>
+        <faultDescription></faultDescription>
+        <faultName>TMP36_Bias_20mV</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.TimedTrigger" uuid="53e5c367-87eb-4fe9-a492-90fa6ff5c915">
+          <startTime>300.0</startTime>
+          <isPersistent>true</isPersistent>
+        </triggerOn>
+      </faults>
+      <faults type="faultinfo.SLFault" uuid="db988946-7fa2-47b6-ad2b-008202c5ab8e">
+        <checksum>eeb5d885-615a-469b-bde0-63c6cb1b9b2d</checksum>
+        <faultDescription></faultDescription>
+        <faultName>TMP36_Sensor_Freeze</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.TimedTrigger" uuid="626fa68f-36c1-4959-a2bc-665e3a1e82e6">
+          <startTime>300.0</startTime>
+          <isPersistent>true</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>true</isEnabled>
+    </faultContainers>
+    <faultContainers type="faultinfo.FaultContainer" uuid="5d182998-bace-44ce-b634-71340345d4e7">
+      <activeFault type="faultinfo.SLFault" uuid="b5579919-390a-4606-9ec9-0e6e2293d584"/>
+      <faultedEntityID>Outport|phase1_tmp36_faults:3|1</faultedEntityID>
+      <faultedEntityName>phase1_tmp36_faults/Bias/Outport/1</faultedEntityName>
+      <faults type="faultinfo.SLFault" uuid="f30a094d-96c3-4c0c-8a26-08fd33536340">
+        <checksum>00000000-0000-0000-0000-000000000000</checksum>
+        <faultDescription>Excessive zero-mean Gaussian noise added to TMP36 sensor output.</faultDescription>
+        <faultName>TMP36_Excessive_Noise</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.TimedTrigger" uuid="fb559383-3718-447c-ad47-dfaa8694610a">
+          <startTime>10.0</startTime>
+          <isPersistent>true</isPersistent>
+        </triggerOn>
+      </faults>
+      <faults type="faultinfo.SLFault" uuid="b5579919-390a-4606-9ec9-0e6e2293d584">
+        <checksum>00000000-0000-0000-0000-000000000000</checksum>
+        <faultDescription></faultDescription>
+        <faultName>TMP36_Sudden_Spike</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.TimedTrigger" uuid="d940c108-a60a-421e-92e4-6b59d96bdfa0">
+          <startTime>10.0</startTime>
+          <isPersistent>true</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>false</isEnabled>
+    </faultContainers>
+    <isEnabled>true</isEnabled>
+    <lastUpdatedAt>2026-10-01T13:05:38</lastUpdatedAt>
+    <modelName>phase1_tmp36_faults</modelName>
+    <modelUUID>55ce2f60-c708-45b9-aa0c-25b13e10ce98</modelUUID>
+  </faultinfo.FaultContainerSet>
+  <faultinfo.FailureModeContainer type="faultinfo.FailureModeContainer" uuid="0c2ee3bc-1f57-44fd-99cf-becd0e82f038">
+    <failureModes type="faultinfo.FailureMode" uuid="b8d5bc45-4aae-43e2-bc83-b90a9437d816">
+      <ID>1</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="d1d39480-79f2-4614-848a-e11c250e0e29"/>
+      <faultSubsystemName>TMP36_Bias_20mV</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="e2333a42-75e6-41bf-9b96-53b0935a33d0">
+      <ID>6</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="db988946-7fa2-47b6-ad2b-008202c5ab8e"/>
+      <faultSubsystemName>TMP36_Sensor_Freeze</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="50c6aabc-2c3b-4f75-bde1-ea663673beb1">
+      <ID>10</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="f30a094d-96c3-4c0c-8a26-08fd33536340"/>
+      <faultSubsystemName>TMP36_Excessive_Noise</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="0da6ceff-f55d-4c89-9d57-daed019485e6">
+      <ID>15</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="b5579919-390a-4606-9ec9-0e6e2293d584"/>
+      <faultSubsystemName>TMP36_Sudden_Spike</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <faultModelName>phase1_tmp36_faults_FaultModel</faultModelName>
+    <faultModelUUID>6cfc6af8-7b46-4cf7-a93e-2152edce91d3</faultModelUUID>
+  </faultinfo.FailureModeContainer>
+</MF0>

@@ -1,0 +1,23 @@
+64 neural , 
+.a file
+
+
+
+
+inferrance time, (can't u increase the time) clk time
+
+
+moving windo protocal, 2 faults occur 
+
+u r comprimisng bet ween 
+
+find the 94 mili sec (latency (from which timw to which time)) => micros 
+
+
+=> latency reduce to half andf the accuracy can be reduce to less the n 1% from before
+
+test on 25k samples (data points)
+
+time profiling tool, tell what time it is taking for each section of the code
+
+same choping of data; 10k, 64; 15-xx;
